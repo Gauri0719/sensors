@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sensor/notification_page.dart';
 import 'package:sensor/profile_page.dart';
 import 'package:sensor/sensor_page.dart';
 
@@ -27,6 +28,12 @@ class _HomePageState extends State<HomePage> {
               Navigator.of(context).push(MaterialPageRoute(builder: (context)=>ProfilePage()));
             },
                 child: Text("Profile Page")),
+            SizedBox(height: 10.0,),
+            ElevatedButton(onPressed: (){
+              Navigator.of(context).push(MaterialPageRoute(builder: (context)=>NotificationPage()));
+            },
+                child: Text("Notification Page")),
+
           ],
         ),
       )),
